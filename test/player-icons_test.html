@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>player-icons test</title>
+
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  <script src="../node_modules/@polymer/test-fixture/test-fixture.js"></script>
+  <script src="../node_modules/mocha/mocha.js"></script>
+  <script src="../node_modules/chai/chai.js"></script>
+  <script src="../node_modules/wct-mocha/wct-mocha.js"></script>
+  <script type="module">
+    import '@polymer/iron-icon/iron-icon.js';
+    import '../player-icons.js';
+  </script>
+</head>
+
+<test-fixture id="simple_icon">
+  <template>
+    <iron-icon id="player-icon" icon="player-icons:play-arrow"></iron-icon>
+  </template>
+</test-fixture>
+
+<body>
+  <script>
+    suite('player-icons', () => {
+      let ironIcon;
+      setup(() => {
+        ironIcon = fixture('simple_icon');
+      })
+      test('iconset and icon name is valid', () => {
+        assert.equal(ironIcon._iconsetName, 'player-icons');
+        assert.equal(ironIcon._iconName, 'play-arrow');
+      });
+      test('svg is within shadow DOM', () => {
+        const svg = ironIcon.shadowRoot.querySelector('svg');
+        expect(svg).to.not.be.null;
+      })
+    });
+  </script>
+</body>
+
+</html>
