@@ -1,7 +1,8 @@
 {
   "name": "player-icons",
-  "description": "Simple SVG player icons",
+  "description": "Simple SVG player icon set",
   "main": "player-icons.js",
+  "version": "1.0.0",
   "dependencies": {
     "@polymer/polymer": "^3.0.0",
     "@polymer/iron-icon": "^3.0.0",
