@@ -1,6 +1,8 @@
 # \<player-icons\>
 
-Simple SVG Icons
+[![npm version](https://badge.fury.io/js/player-icons.svg)](https://badge.fury.io/js/player-icons)
+
+Simple SVG player control icons used for [mp4-video-player](https://github.com/Eddie-Thuo/mp4-video-player)
 
 ## Install the Polymer-CLI
 
