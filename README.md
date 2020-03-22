@@ -1,6 +1,6 @@
 # \<player-icons\>
 
-[![npm version](https://badge.fury.io/js/player-icons.svg)](https://badge.fury.io/js/player-icons)
+[![Build Status](https://travis-ci.com/Eddie-Thuo/player-icons.svg?branch=master)](https://travis-ci.com/Eddie-Thuo/player-icons) [![npm version](https://badge.fury.io/js/player-icons.svg)](https://badge.fury.io/js/player-icons)
 
 Simple SVG player control icons used for [mp4-video-player](https://github.com/Eddie-Thuo/mp4-video-player)
 
