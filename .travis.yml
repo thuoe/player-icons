@@ -4,8 +4,8 @@ node_js:
 addons:
   firefox: latest
 before_script:
-  - npm install -g polymer-cli@6.14.7
-  - npm polymer-cli -v
+  - npm install -g polymer-cli@1.9.11
+  - polymer -v
   - git checkout package-lock.json
 script:
   - xvfb-run polymer test --module-resolution=node --npm --local firefox
