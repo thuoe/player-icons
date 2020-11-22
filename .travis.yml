@@ -4,7 +4,9 @@ node_js:
 addons:
   firefox: latest
 before_script:
+  - npm uninstall -g polymer-cli
   - npm install -g polymer-cli
+  - npm polymer-cli -v
   - git checkout package-lock.json
 node_js: node
 script:
