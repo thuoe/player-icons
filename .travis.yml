@@ -1,7 +1,6 @@
 language: node_js
 sudo: 'false'
 before_script:
-  - rm -r node-modules
   - npm install -g polymer-cli
 node_js: node
 addons:
