@@ -1,6 +1,7 @@
 language: node_js
 sudo: 'false'
 before_script:
+  - rm -r node-modules
   - npm install -g polymer-cli
 node_js: node
 addons:
@@ -8,6 +9,3 @@ addons:
 script:
   - xvfb-run polymer test --module-resolution=node --npm --local firefox
 dist: trusty
-cache:
-  directories:
-    - node_modules
